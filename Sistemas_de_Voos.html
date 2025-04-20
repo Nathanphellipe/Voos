@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema de Voos</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema de Voos</h1>
+
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Buscar por destino...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <form id="addFlightForm">
+            <input type="text" id="destinationInput" placeholder="Destino" required>
+            <input type="date" id="dateInput" required>
+            <input type="time" id="timeInput" required>
+            <select id="statusInput" required>
+                <option value="Embarcando">Embarcando</option>
+                <option value="Cancelado">Cancelado</option>
+                <option value="Atrasado">Atrasado</option>
+            </select>
+            <button type="submit">Adicionar Voo</button>
+        </form>
+
+        <label for="statusFilter">Filtrar por status:</label>
+        <select id="statusFilter">
+            <option value="">Todos</option>
+            <option value="Embarcando">Embarcando</option>
+            <option value="Cancelado">Cancelado</option>
+            <option value="Atrasado">Atrasado</option>
+        </select>
+
+
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
